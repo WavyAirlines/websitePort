@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather+Sans:wght@300;400&family=Roboto+Mono&family=Rubik:wght@400;500&display=swap');
+
+body {
+  background-color: #303030;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-content, .right-content {
+  flex: 1;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cam {
+  color: #E3A927;
+}
+
+h1, h2 {
+  color: #fff;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.landingSelfie {
+  border: 2px solid #813CD9;
+  max-width: 45%;
+  max-height: 100%;
+  border-radius: 25px;
+}
+
+.techStack {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techLogos {
+  max-height: 300px;
+}
+
+.text {
+  letter-spacing: 10px;
+  border-right: 5px solid;
+  max-width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(8), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.techLogos {
+  margin: 10px 0 50px;
+  padding-top: 75px;
+}
+
+.smartBeach1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sblandingPage {
+  text-align: center;
+}
+
+.pjh1 {
+  margin: 0 0 25px;
+}
+
+.smartBeach2 {
+  height: 100vh;
+  background-image: url("/images/smartBeachBg.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mobileView {
+  background-image: url("/images/sbmobileView.png");
+}
+
+.site {
+  border-radius: 5px;
+  padding: 11px 10px;
+  border: none;
+  margin: 10px 10px 10px 350px;
+  background-color: #0D6EFD;
+  color: white;
+}
+
+.site:hover {
+  background-color: #0C5CBC;
+  transition: 0.2s ease;
+}
+
+.site:active {
+  background-color: #00b7ff00;
+  border: 1px solid black;
+  color: black;
+}
+
+.repository {
+  border-radius: 5px;
+  padding: 11px 10px;
+  border: 1px solid black;
+  background-color: #00b7ff00;
+  color: black;
+}
+
+.repository:hover {
+  background-color: #0C5CBC;
+  transition: 0.2s ease;
+}
+
+.repository:active {
+  background-color: #0D6EFD;
+  color: white;
+  border: none;
+}
+
+.mobileView {
+  margin: 50px;
+  border-radius: 25px;
+}
+
+.smartText {
+  font-size: 42px;
+  color: black;
+  margin: 250px 120px 0 250px;
+}
+
+.huskySection {
+  border-radius: 25px;
+  height: 80vh;
+  margin: 50px;
+}
+
+.fetchlyContent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: #A43B2C;
+}
+
+.huskySection {
+  border-radius: 25px;
+  height: 80vh;
+  margin: 50px;
+}
+
+.textAndButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fetchText {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 20px; /* Adds space between text and buttons */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  gap: 10px; /* Space between buttons */
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+}
+
+.huskySection {
+  margin: 20px;
+}
+
+.tech {
+  color: black;
+  margin-top: 10vh;
+  margin-left: 10px;
+  font-weight: light;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+  }
+
+  .left-content {
+    align-items: center;
+  }
+
+  .landingSelfie {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .techStack, .smartBeach2, .fetchlyContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smartText, .fetchText {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .site, .repository {
+    margin: 10px;
+  }
+
+  .huskySection, .mobileView {
+    width: 80%;
+    margin: 20px;
+  }
+
+  .smartBeach2, .fetchlyContent {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .landingSelfie {
+    max-width: 90%;
+  }
+
+  .techStack {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    justify-content: flex-start; /* Align logos to the start */
+  }
+
+  .techLogos {
+    max-height: 100px; /* Make logos smaller */
+    margin: 5px; /* Adjust margins */
+    flex-shrink: 0; /* Prevent logos from shrinking */
+  }
+
+  .site, .repository {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .smartText, .fetchText {
+    font-size: 1.5em;
+  }
+
+  .huskySection, .mobileView {
+    width: 100%;
+    margin: 10px;
+  }
+}
